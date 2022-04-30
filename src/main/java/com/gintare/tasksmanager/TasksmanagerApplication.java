@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @SpringBootApplication
 @RestController
 public class TasksmanagerApplication {
@@ -14,8 +16,9 @@ public class TasksmanagerApplication {
 	}
 
 	@GetMapping
-	public String starterMessage(){
-		return "Get ready! Task Manager coming soon!";
+	public List<String> starterMessage(){
+		return List.of("hello",
+				"world");
 	}
 
 }
