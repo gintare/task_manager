@@ -9,18 +9,18 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.util.List;
 
 @SpringBootApplication
-@RestController
-@EnableSwagger2
+//@RestController
+//@EnableSwagger2
 public class TasksmanagerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TasksmanagerApplication.class, args);
 	}
 
-	@GetMapping
+	/*@GetMapping
 	public List<String> starterMessage(){
 		return List.of("hello",
 				"world");
-	}
+	}*/
 
 }
