@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+  <title>Edit Task Details</title>
+  <th:block th:include="layout/header"></th:block>
+</head>
+<body>
+<div class="container">
+  <h2>Edit Task Details</h2>
+  <div>
+    <!--<form class="form-horizontal" th:object="${task}" th:action="@{/tasks}" method="post">
+      <div class="form-group">
+        <div class="col-sm-10">
+          <input type="hidden" class="form-control" th:field="*{id}" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Parent Task Id</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" th:field="*{parentTaskId}" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" th:field="*{name}" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Time Spend ( number in hours )</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" th:field="*{timeSpend}" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Group</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" th:field="*{group}" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">assignee</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" th:field="*{assignee}" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">isFinished ( yes / no )</label>
+        <div class="col-sm-10">
+          <input type="checkbox" class="form-control" th:checked="${isFinished} ? 'checked'"  />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-2">
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+
+    </form>-->
+  </div>
+</div>
+</body>
+</html>

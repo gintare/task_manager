@@ -1,13 +1,15 @@
 package com.gintare.tasksmanager.task;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
 
 //@Entity
-//@Table
+@Table
 public class Task {
-    //@Id
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "system-uuid")
+    @GenericGenerator(name = "system-uuid", strategy = "uuid2")
     private String id;
     private String parentTaskId;
     private String name;
