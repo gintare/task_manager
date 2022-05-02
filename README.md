@@ -7,4 +7,4 @@ This is instrution how to run it:
 4. Go to http://localhost:8080/
 5. Create your first task here http://localhost:8080/tasks/add
 
-Swagger UI is in url localhost:8080/swagger-ui.html.
+Swagger UI is in url http://localhost:8080/swagger-ui.html/.
