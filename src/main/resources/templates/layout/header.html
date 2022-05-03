@@ -10,11 +10,11 @@
 <body>
 <div class="container">
     <div th:fragment="header">
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default task_manager_top_menu_nav">
             <div class="container-fluid">
-                <div class="navbar-header">
+                <div class="navbar-header task_manager_top_menu_container" >
                     <a class="navbar-brand" href="#" th:href="@{/}">Home</a>
-                    <ul class="nav navbar-nav">
+                    <ul class="nav1 navbar-nav1 task_manager_top_menu" >
                         <li><a th:href="@{/tasks}">Tasks</a></li>
                         <li><a th:href="@{/tasks/add}">Create Task</a></li>
                     </ul>
@@ -23,14 +23,13 @@
         </nav>
 
         <div class="jumbotron">
-            <div class="row text-center">
-                <div class="row">
+            <div class="row text-center task_manager_header_title_container" >
+                <div class="row1 task_manager_header_title" >
                     <h2>Task Manager Application</h2>
                 </div>
             </div>
-            <div class="row text-center">
-                <img src="../../static/images/task_manager_icon.png" width="10%"
-                     th:src="@{/images/task_manager_icon.png}" />
+            <div class="text-center">
+                <img src="../../static/images/task_manager_icon.png" width="10%" th:src="@{/images/task_manager_icon.png}" />
             </div>
         </div>
 

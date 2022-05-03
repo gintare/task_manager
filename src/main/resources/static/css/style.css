@@ -1,0 +1,26 @@
+
+.task_manager_top_menu_nav{
+    background: #ec705d;
+}
+
+.task_manager_top_menu_container{
+    width:100%;
+}
+
+.task_manager_top_menu{
+    float: right;
+    margin-top: 10px;
+}
+
+.task_manager_top_menu li{
+    display: inline;
+    padding: 10px;
+}
+
+.task_manager_header_title_container{
+    tex-align:center;
+}
+
+.task_manager_header_title{
+    width: 100%;
+}

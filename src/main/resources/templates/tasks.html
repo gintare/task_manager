@@ -18,7 +18,7 @@
                 <th>Assignee</th>
                 <th>Group</th>
                 <th>Time spend</th>
-                <th>Subtasks</th>
+                <th>Parent task</th>
                 <th>Is Finished</th>
                 <th>Edit</th>
                 <th>Delete</th>
@@ -31,7 +31,16 @@
                 <td th:text="${task.timeSpend}"></td>
                 <td th:text="${task.parentTaskId}"></td>
                 <td>
-                    <input type="checkbox" class="form-control" id="isFinished" name="isFinished" th:checked="${isFinished}">
+                    <span th:if="${task.finished} == true" >
+                        <img src="/images/icon4.webp" width="15%" h:src="@{/images/icon4.webp}" />
+                        <!--<span th:text="${task.parentTaskId}"></span>
+                        <span th:text="${message}"></span>-->
+                    </span>
+                    <span th:if="${task.finished} == false" >
+                        <a th:href="${'/tasks/finished/' + task.id}" class="btn btn-default">Finish task</a>
+                    </span>
+
+
                 </td>
                 <td><a th:href="${'/tasks/edit/' + task.id}" class="btn btn-default">Edit</a></td>
                 <td><a th:href="${'/tasks/delete/' + task.id}" class="btn btn-danger">Delete</a></td>
@@ -39,6 +48,14 @@
             </tr>
         </table>
     </div>
+                    <script>
+                      if(window.location.search == "?error_message_subtasks_not_finished"){
+                          myFunction()
+                      }
+                      function myFunction() {
+                          alert("Subtasks of this task not finished");
+                       }
+                    </script>
 </div>
 </body>
 </html>
