@@ -21,7 +21,13 @@ public class Task {
     public Task() {
     }
 
-    public Task(String id, String parentTaskId, String name, int timeSpend, String group, String assignee, boolean isFinished) {
+    public Task(String id,
+                String parentTaskId,
+                String name,
+                int timeSpend,
+                String group,
+                String assignee,
+                boolean isFinished) {
         this.id = id;
         this.parentTaskId = parentTaskId;
         this.name = name;
@@ -31,7 +37,12 @@ public class Task {
         this.isFinished = isFinished;
     }
 
-    public Task(String parentTaskId, String name, int timeSpend, String group, String assignee, boolean isFinished) {
+    public Task(String parentTaskId,
+                String name,
+                int timeSpend,
+                String group,
+                String assignee,
+                boolean isFinished) {
         this.parentTaskId = parentTaskId;
         this.name = name;
         this.timeSpend = timeSpend;
@@ -108,4 +119,5 @@ public class Task {
                 ", isFinished=" + isFinished +
                 '}';
     }
+
 }

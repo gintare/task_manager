@@ -96,7 +96,7 @@ public class TaskController {
      * @param subtasks
      * @return
      */
-    public static boolean isSubtasksFinished(List<Task> subtasks){
+    public boolean isSubtasksFinished(List<Task> subtasks){
         boolean subtasksFinished = true;
         for(Task subtask : subtasks){
             if(subtask.isFinished() == false){
@@ -111,7 +111,7 @@ public class TaskController {
      * @param task
      * @return
      */
-    public static List<Task> tasksSubtasks(Task task, List<Task> allTasks){
+    public List<Task> tasksSubtasks(Task task, List<Task> allTasks){
         List<Task> subtasks = new ArrayList<Task>();
         for(Task task1 : allTasks) {
             if( task.getId().equalsIgnoreCase(task1.getParentTaskId())){
